@@ -1147,7 +1147,6 @@ flex-grow: 0;
 
   position: relative;
   width: 1290px;
-  height: 60px;
 
   border-bottom: 1px solid #789FB0;
 }
@@ -1195,3 +1194,10 @@ flex-grow: 0;
   background-color: #789FB0;
   transition: 0.2s;
 }
+
+.block-otazky .odpoved{
+  padding-bottom: 15px;
+  padding-top:15px;
+  display: none;
+}
+

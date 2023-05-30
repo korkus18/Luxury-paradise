@@ -189,7 +189,6 @@ p {
 .button-2{
   box-sizing: border-box;
 
-  /* Auto layout */
   
   display: flex;
   flex-direction: row;
@@ -203,25 +202,23 @@ p {
   background: rgba(120, 159, 176, 0.4);
   border: 5px solid #789FB0;
   font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 12px;
-/* identical to box height, or 34% */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 12px;
 
-display: flex;
-align-items: center;
-text-align: right;
-text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
 
-/* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 
@@ -331,9 +328,6 @@ flex-grow: 0;
 }
 
 
-
-
-
 .cont-check{
   display: block;
   position: relative;
@@ -397,7 +391,16 @@ flex-grow: 0;
 }
 
 
+
+
+
+
+
 /* blocks */
+
+
+
+
 
 
 
@@ -583,14 +586,6 @@ flex-grow: 0;
   order: 4;
   flex-grow: 0;
 }
-
-
-
-
-
-
-
-
 
 .block-pricing .block-pricing-3{
   width: 300px;
@@ -1003,11 +998,6 @@ flex-grow: 0;
   align-items: flex-start;
   padding: 0px 40px 40px;
   gap: 20px;
-
-
-
-
-
   flex: none;
   order: 1;
   align-self: stretch;
@@ -1017,10 +1007,6 @@ flex-grow: 0;
 .block-more-info-img img{
   width: 398px;
 }
-
-
-
-
 
 
 

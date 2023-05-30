@@ -61,6 +61,7 @@ p {
   color: #789FB0;
 }
 
+
 .size-20-000000-bolt{
   font-family: 'Arial';
   font-style: normal;
@@ -286,7 +287,7 @@ p {
 .instagram-icon svg {
   width: 100%;
   height: 100%;
-  fill:#FFFFFF; 
+  fill: #000000; 
 }
 .linkedin-icon {
   width: 20px;
@@ -306,7 +307,7 @@ p {
 .facebook-icon svg {
   width: 100%;
   height: 100%;
-  fill:#FFFFFF;
+  fill:#000000;
 }
 
 .block-input {
@@ -1281,10 +1282,7 @@ justify-content: center;
 align-items: center;
 padding: 75px;
 gap: 75px;
-
 position: relative;
-
-
 background: #FFFFFF;
 }
 .section-content-2 .leva{
@@ -1293,12 +1291,7 @@ background: #FFFFFF;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  
   width: 607.5px;
-  
-  
-  /* Inside auto layout */
-  
   flex: none;
   order: 0;
   flex-grow: 1;
@@ -1309,32 +1302,18 @@ background: #FFFFFF;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  
-
-  
-  
-  /* Inside auto layout */
-  
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 .section-content-2 .leva .buttot-4{
   box-sizing: border-box;
-
-  /* Auto layout */
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 11px 30px 10px;
-
-  
   border: 1px solid #789FB0;
-  
-  /* Inside auto layout */
-  
   flex: none;
   order: 3;
   flex-grow: 0;
@@ -1344,10 +1323,6 @@ background: #FFFFFF;
   flex-direction: column;
   align-items: flex-end;
   padding: 0px;
-
-  
-  /* Inside auto layout */
-  
   flex: none;
   order: 1;
   align-self: stretch;
@@ -1394,13 +1369,8 @@ background: #FFFFFF;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
-
   width: 1140px;
   height: 131px;
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 2;
   align-self: stretch;
@@ -1490,9 +1460,6 @@ background: #FFFFFF;
   gap: 40px;
   width: 605px;
   text-align: center;
-  
-  /* Inside auto layout */
-  
   flex: none;
   order: 0;
   flex-grow: 1;
@@ -1502,9 +1469,6 @@ background: #FFFFFF;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px 75px;
-
-  
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1515,11 +1479,6 @@ background: #FFFFFF;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  
-  
-  
-  /* Inside auto layout */
-  
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -1529,11 +1488,6 @@ background: #FFFFFF;
   flex-direction: column;
   align-items: flex-end;
   padding: 0px;
-
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1611,7 +1565,6 @@ background: #FFFFFF;
   align-items: flex-start;
   padding: 75px;
   gap: 40px;
-
   position: relative;
   background: #FFFFFF;
 }
@@ -1644,6 +1597,44 @@ background: #FFFFFF;
   padding: 0px;
 }
 .section-footer .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 75px;
+  gap: 75px;
+  background: #F3F3F3;
+  align-self: stretch;
+}
+.section-footer .footer .footer-lokalita{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+
+.section-footer .footer .footer-kontakt{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+.section-footer .footer .footer-socialni-site{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+.section-footer .footer .footer-socialni-site .content{
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  gap:5px;
 
 }
 .section-footer .footer-copyright{
@@ -1652,14 +1643,31 @@ background: #FFFFFF;
   justify-content: space-between;
   align-items: center;
   padding: 20px 75px;
-
-
   background: #789FB0;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
   align-self: stretch;
   flex-grow: 0;
+}
+
+
+
+
+.logo .nazev {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #789FB0;
+}
+.logo .nazev p:nth-child(1) {
+  font-weight: 600;
+}
+
+.logo .nazev p:nth-child(2) {
+  font-weight: 200;
 }

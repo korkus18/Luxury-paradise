@@ -427,33 +427,33 @@ flex-grow: 0;
 }
 .kontaktni-formular .block-input{
   display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 7px 12px 10px;
-box-sizing: border-box;
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 12px 10px;
+  box-sizing: border-box;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .kontaktni-formular .button-4{
   box-sizing: border-box;
 
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
 
 
-border: 1px solid #789FB0;
+  border: 1px solid #789FB0;
 
 
-flex: none;
-order: 4;
-flex-grow: 0;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
 }
 
 
@@ -474,24 +474,22 @@ flex-grow: 0;
 
 
 .block-pricing .block-pricing-1{
-/* Auto layout */
-width: 300px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 40px;
-gap: 40px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
 
 
 
-background: rgba(120, 159, 176, 0.2);
-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(120, 159, 176, 0.2);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 
-/* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .block-pricing .block-pricing-1 .stars{
@@ -500,11 +498,10 @@ flex-grow: 0;
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-    color: #789FB0;
+  color: #789FB0;
   
 
   
-  /* Inside auto layout */
   
   flex: none;
   order: 0;
@@ -524,7 +521,6 @@ flex-grow: 0;
   color: #789FB0;
   
   
-  /* Inside auto layout */
   
   flex: none;
   order: 0;
@@ -542,7 +538,6 @@ flex-grow: 0;
   color: #789FB0;
   
   
-  /* Inside auto layout */
   
   flex: none;
   order: 2;
@@ -556,7 +551,6 @@ flex-grow: 0;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  /* identical to box height */
   
   display: flex;
   align-items: center;
@@ -565,7 +559,6 @@ flex-grow: 0;
   color: #789FB0;
   
   
-  /* Inside auto layout */
   
   flex: none;
   order: 3;
@@ -574,7 +567,6 @@ flex-grow: 0;
 .block-pricing .block-pricing-1 .button-3{
   box-sizing: border-box;
 
-  /* Auto layout */
   
   display: flex;
   flex-direction: row;
@@ -586,7 +578,6 @@ flex-grow: 0;
   
   border: 1px solid #789FB0;
   
-  /* Inside auto layout */
   
   flex: none;
   order: 4;
@@ -602,245 +593,226 @@ flex-grow: 0;
 
 
 .block-pricing .block-pricing-3{
-  /* Auto layout */
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
   gap: 40px;
-  
-  
-  
+
+
+
   background: rgba(120, 159, 176, 0.5);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
   
-  /* Inside auto layout */
+.block-pricing .block-pricing-3 .stars{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  color: #FFFFFF;
+  
+
+  
   
   flex: none;
   order: 0;
   flex-grow: 0;
-  }
+}
+.block-pricing .block-pricing-3 .nazev-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   
-  .block-pricing .block-pricing-3 .stars{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-      color: #FFFFFF;
-    
-  
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .block-pricing .block-pricing-3 .nazev-balicku{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    
-    color: #fff;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .block-pricing .block-pricing-3 .popis-balicku{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    
-    color: #fff;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  
-  .block-pricing .block-pricing-3 .cena-balicku{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    /* identical to box height */
-    
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    
-    color: #fff;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-  }
-  .block-pricing .block-pricing-3 .button-5{
-    box-sizing: border-box;
-  
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 30px 10px;
-    
-    
-    
-    border: 1px solid #fff;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 4;
-    flex-grow: 0;
-  }
+  color: #fff;
   
   
-  .block-pricing .block-pricing-3{
-  /* Auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-3 .popis-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  
+  color: #fff;
+  
+  
+  
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+  
+.block-pricing .block-pricing-3 .cena-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  
+  color: #fff;
+  
+  
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-3 .button-5{
+  box-sizing: border-box;
+
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 30px 10px;
+  
+  
+  
+  border: 1px solid #fff;
+  
+  
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+  
+  
+.block-pricing .block-pricing-3{
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
   gap: 40px;
-  
-  
-  
+
+
+
   background: rgba(120, 159, 176, 0.5);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
   
-  /* Inside auto layout */
+.block-pricing .block-pricing-3 .stars{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+    color: #FFFFFF;
+  
+
+  
   
   flex: none;
   order: 0;
   flex-grow: 0;
-  }
+}
+.block-pricing .block-pricing-3 .nazev-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   
-  .block-pricing .block-pricing-3 .stars{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-      color: #FFFFFF;
-    
+  color: #fff;
   
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .block-pricing .block-pricing-3 .nazev-balicku{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    
-    color: #fff;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .block-pricing .block-pricing-3 .popis-balicku{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    
-    color: #fff;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-  }
   
-  .block-pricing .block-pricing-3 .cena-balicku{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    /* identical to box height */
-    
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    
-    color: #fff;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-  }
-  .block-pricing .block-pricing-3 .button-5{
-    box-sizing: border-box;
   
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 30px 10px;
-    
-    
-    
-    border: 1px solid #fff;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 4;
-    flex-grow: 0;
-  }
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-3 .popis-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  
+  color: #fff;
+  
+  
+  
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+  
+.block-pricing .block-pricing-3 .cena-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  
+  color: #fff;
+  
+  
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-3 .button-5{
+  box-sizing: border-box;
+
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 30px 10px;
+  
+  
+  
+  border: 1px solid #fff;
+  
+  
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
 
 
 
@@ -850,126 +822,109 @@ flex-grow: 0;
 
 
 
-  .block-pricing .block-pricing-2{
-    /* Auto layout */
-    width: 350px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px;
-    gap: 52px;
-    
-    
-    
-    background: rgba(120, 159, 176, 0.5);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    }
-    
-    .block-pricing .block-pricing-2 .stars{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 10px;
-        color: #FFFFFF;
-      
-    
-      
-      /* Inside auto layout */
-      
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-    }
-    .block-pricing .block-pricing-2 .nazev-balicku{
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 25px;
-      line-height: 30px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      
-      color: #fff;
-      
-      
-      /* Inside auto layout */
-      
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-    }
-    .block-pricing .block-pricing-2 .popis-balicku{
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      display: flex;
-      align-items: center;
-      
-      color: #fff;
-      
-      
-      /* Inside auto layout */
-      
-      flex: none;
-      order: 2;
-      align-self: stretch;
-      flex-grow: 0;
-    }
-    
-    .block-pricing .block-pricing-2 .cena-balicku{
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 27px;
-      /* identical to box height */
-      
-      display: flex;
-      align-items: center;
-      letter-spacing: 1px;
-      
-      color: #fff;
-      
-      
-      /* Inside auto layout */
-      
-      flex: none;
-      order: 3;
-      flex-grow: 0;
-    }
-    .block-pricing .block-pricing-2 .button-5{
-      box-sizing: border-box;
-    
-      /* Auto layout */
-      
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 11px 30px 10px;
-      
-      
-      
-      border: 1px solid #fff;
-      
-      /* Inside auto layout */
-      
-      flex: none;
-      order: 4;
-      flex-grow: 0;
-    }
+.block-pricing .block-pricing-2{
+width: 350px;
+height: 360px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 52px;
+
+
+
+background: rgba(120, 159, 176, 0.5);
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.block-pricing .block-pricing-2 .stars{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+    color: #FFFFFF;
+  
+
+  
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-2 .nazev-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  color: #fff;
+  
+  
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-2 .popis-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  
+  color: #fff;
+  
+  
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.block-pricing .block-pricing-2 .cena-balicku{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  
+  color: #fff;
+  
+  
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.block-pricing .block-pricing-2 .button-5{
+  box-sizing: border-box;      
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 30px 10px;
+  border: 1px solid #fff;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
 
 
 
@@ -992,7 +947,6 @@ flex-grow: 0;
 
   background: #789FB0;
 
-  /* Inside auto layout */
 
   flex: none;
   order: 0;
@@ -1029,7 +983,6 @@ flex-grow: 0;
 .block-more-info-img{
   box-sizing: border-box;
 
-  /* Auto layout */
 
   display: flex;
   flex-direction: column;
@@ -1054,7 +1007,6 @@ flex-grow: 0;
 
 
 
-  /* Inside auto layout */
 
   flex: none;
   order: 1;
@@ -1075,7 +1027,6 @@ flex-grow: 0;
 .block-more-info{
   box-sizing: border-box;
 
-  /* Auto layout */
   
   display: flex;
   flex-direction: column;
@@ -1137,8 +1088,6 @@ flex-grow: 0;
 
 .block-otazky{
   box-sizing: border-box;
-
-  /* Auto layout */
 
   display: flex;
   flex-direction: row;

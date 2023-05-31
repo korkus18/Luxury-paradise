@@ -287,7 +287,7 @@ p {
 .instagram-icon svg {
   width: 100%;
   height: 100%;
-  fill: #000000; 
+  fill: #FFFFFF; 
 }
 .linkedin-icon {
   width: 20px;
@@ -307,7 +307,7 @@ p {
 .facebook-icon svg {
   width: 100%;
   height: 100%;
-  fill:#000000;
+  fill:#FFFFFF;
 }
 
 .block-input {
@@ -1610,6 +1610,34 @@ background: #FFFFFF;
   background: #F3F3F3;
   align-self: stretch;
 }
+.section-footer .footer .footer-logo{
+  gap: 10px;
+  display: flex;  
+  flex-direction: column;
+}
+.section-footer .footer .footer-logo .logo{
+  display: flex;
+  justify-content: center;
+
+}
+.section-footer .footer .footer-logo .nazev {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: 1px;
+  color: #789FB0;
+}
+.section-footer .footer .footer-logo .nazev p:nth-child(1) {
+  font-weight: 800;
+}
+
+.section-footer .footer .footer-logo .nazev p:nth-child(2) {
+  font-weight: 100;
+}
+
 .section-footer .footer .footer-lokalita{
   display: flex;
   flex-direction: column;
@@ -1640,8 +1668,19 @@ background: #FFFFFF;
   align-items: flex-start;
   display: flex;
   gap:5px;
-
 }
+.section-footer .footer .footer-socialni-site .content .instagram-icon svg{
+  fill:#000000 !important;
+}
+.section-footer .footer .footer-socialni-site .content .facebook-icon svg{
+  fill:#000000 !important;
+}
+
+
+
+
+
+
 .section-footer .footer-copyright{
   display: flex;
   flex-direction: row;
@@ -1656,23 +1695,64 @@ background: #FFFFFF;
 
 
 
-.logo .nazev {
+
+
+.section-header{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  background: #789FB0;
+}
+
+
+.section-header .header-navbars{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 0px 40px 75px;
+  gap: 25px;
+  width: 30vw;
+}
+
+
+.section-header .header-logo{
+  display: flex;  
+  width: 30vw;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-header .header-logo .logo{
+  display: flex;
+  justify-content: center;
+  color: #ffff;
+}
+.section-header .header-logo .nazev {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 16px;
   display: flex;
-  align-items: center;
   letter-spacing: 1px;
-  color: #789FB0;
+  color: #ffff;
+  justify-content: center
 }
-.logo .nazev p:nth-child(1) {
-  font-weight: 600;
+.section-header .header-logo .nazev p:nth-child(1) {
+  font-weight: 800;
+}
+.section-header .header-logo .nazev p:nth-child(2) {
+  font-weight: 100;
 }
 
-.logo .nazev p:nth-child(2) {
-  font-weight: 200;
+
+.section-header .header-kontakt{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 75px 40px 0px;
+  gap: 25px;
+  width: 30vw;
 }

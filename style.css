@@ -315,7 +315,7 @@ p {
 }
 
 .block-input input {
-  width: 1000px;
+  width: 90vw;
   font-size: 16px;
   border: none;
   border-bottom: 2px solid #789FB0;
@@ -478,12 +478,13 @@ p {
 
 
 .block-pricing .block-pricing-1{
-  width: 300px;
+  width: 18vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
   gap: 40px;
+  justify-content: center;
 
 
 
@@ -589,12 +590,13 @@ p {
 }
 
 .block-pricing .block-pricing-3{
-  width: 300px;
+  width: 18vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
   gap: 40px;
+  justify-content: center;
 
 
 
@@ -700,7 +702,7 @@ p {
   
   
 .block-pricing .block-pricing-3{
-  width: 300px;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -819,13 +821,14 @@ p {
 
 
 .block-pricing .block-pricing-2{
-  width: 350px;
-  height: 360px;
+  width: 25vw;
+  height:45vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px;
-  gap: 52px;
+  padding: 60px 40px 40px 40px;
+  gap: 50px;
+  justify-content: center;
 
 
 
@@ -987,7 +990,7 @@ p {
   gap: 20px;
 
   position: relative;
-  width: 400px;
+  width: 27vw;
 
   border: 1px solid #789FB0;
   
@@ -1008,7 +1011,7 @@ p {
 
 
 .block-more-info-img img{
-  width: 398px;
+  width: 27vw;
 }
 
 
@@ -1071,8 +1074,8 @@ p {
 .tabulka-3 table td{
   border-bottom: 1px solid #789FB0;;
   padding: 10px;
-  padding-left: 40px;
-  padding-right:40px;
+  padding-left: 3vw;
+  padding-right:3vw;
 }
 
 
@@ -1085,7 +1088,7 @@ p {
   padding: 10px 0px;
 
   position: relative;
-  width: 1290px;
+  width: 85vw;
 
   border-bottom: 1px solid #789FB0;
 }
@@ -1180,6 +1183,7 @@ p {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  justify-content: center;
 }
 
 
@@ -1246,7 +1250,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 1;
-  width: 625px;
+  width: 50vw;
 }
 
 .section-content-1 .prava{
@@ -1291,7 +1295,7 @@ background: #FFFFFF;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  width: 607.5px;
+  width: 40vw;
   flex: none;
   order: 0;
   flex-grow: 1;
@@ -1327,14 +1331,15 @@ background: #FFFFFF;
   order: 1;
   align-self: stretch;
   flex-grow: 1;
+  justify-content: center;
 }
 .section-content-2 img{
 
-  width: 607.5px;
+  width: 40vw;
   flex: none;
   order: 0;
   align-self: stretch;
-  flex-grow: 1;
+  height: auto;
 }
 
 
@@ -1369,8 +1374,6 @@ background: #FFFFFF;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
-  width: 1140px;
-  height: 131px;
   flex: none;
   order: 2;
   align-self: stretch;
@@ -1394,8 +1397,8 @@ background: #FFFFFF;
   background: #FFFFFF;
 }
 .section-content-4 img{
-  width: 389px;
-  height: 259px;  
+  width: 30vw;
+  height: auto;  
 }
 .section-content-4 .prava{
   display: flex;
@@ -1403,7 +1406,7 @@ background: #FFFFFF;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  width: 700px;
+  width: 55vw;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1432,8 +1435,8 @@ background: #FFFFFF;
 }
 
 .section-content-5 .galerie img{
-  width: 591px;
-  height: 394px;
+  width: 40vw;
+  height: auto;
 }
 .section-content-5 .text{
   display: flex;
@@ -1458,7 +1461,7 @@ background: #FFFFFF;
   align-items: center;
   padding: 0px;
   gap: 40px;
-  width: 605px;
+  width: 47vw;
   text-align: center;
   flex: none;
   order: 0;
@@ -1494,8 +1497,8 @@ background: #FFFFFF;
 }
 
 .section-content-6 .prava img{
-  width: 645px;
-  height: 364px;
+  width: 38vw;
+  height: auto;
 }
 
 
@@ -1516,7 +1519,7 @@ background: #FFFFFF;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg);
 }
 .section-cta-1 .text{
-  padding: 0px 150px;
+  padding: 0px 8vw;
 }
 
 
@@ -1549,11 +1552,13 @@ background: #FFFFFF;
 .section-pricing{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 75px;
   gap: 40px;
   position: relative;
   background: #F3F3F3;
+  align-content: center;
+
 }
 
 

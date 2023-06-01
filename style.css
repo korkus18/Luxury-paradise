@@ -5,6 +5,9 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+body{
+  margin:0px;
+}
 
 /* components */
 
@@ -2161,7 +2164,7 @@ background: #FFFFFF;
   width: 80%;
   flex-direction: column;
   align-items: center;
-  margin-left: 19%;
+  margin-left: 21%;
   gap:10px
 }
 .section-hero-basic .dole .prava{

@@ -10,7 +10,8 @@ p {
 
 
 
-.size-50-FFFFFF-up{font-family: 'Inter';
+.size-50-FFFFFF-up{
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
@@ -116,6 +117,16 @@ p {
   align-items: center;
   color: #000000;
 }
+.size-12-000000-italic{
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
 
 .size-16-FFFFFF-underline{
   font-family: 'Inter';
@@ -186,6 +197,9 @@ p {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.button-1:hover {
+  background: rgba(120, 159, 176, 0.8);
+}
 
 .button-2{
   box-sizing: border-box;
@@ -221,7 +235,9 @@ p {
   order: 0;
   flex-grow: 0;
 }
-
+.button-2:hover {
+  background: rgba(120, 159, 176, 0.8);
+}
 
 .button-3{
   flex-direction: row;
@@ -241,6 +257,10 @@ p {
   color: #789FB0;
   background-color: transparent;
 }
+.button-3:hover {
+  background-color: #789FB0;
+  color: #FFFFFF;
+}
 .button-4{
   flex-direction: row;
   justify-content: center;
@@ -259,6 +279,10 @@ p {
   color: #000000;
   background-color: transparent;
 }
+.button-4:hover {
+  background-color: #789FB0;
+  color: #FFFFFF;
+}
 .button-5{
   flex-direction: row;
   justify-content: center;
@@ -276,6 +300,10 @@ p {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: transparent;
+}
+.button-5:hover {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 
@@ -390,8 +418,31 @@ p {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-
+.slider {
+  border: 2px solid transparent;
+  padding: 2px;
+  width: 19px;
+  height: 19px;
+  transform: rotate(-45deg);
+  background: 0 0;
+  outline: 0;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.slider span{
+  background: #fff;
+  width: 9px;
+  height: 9px;
+  display: block;
+}
+.aktivni{
+  border-color: #789FB0;
+}
 
 
 
@@ -981,19 +1032,14 @@ p {
 
 .block-more-info-img{
   box-sizing: border-box;
-
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 20px;
-
   position: relative;
   width: 27vw;
-
   border: 1px solid #789FB0;
-  
 }
 
 .block-more-info-img .obsah{
@@ -1055,15 +1101,20 @@ p {
 .tabulka-1 table td{
   border-bottom: 1px solid #789FB0;;
   padding: 10px;
+  padding-left: 3vw;
+  padding-right:3vw;
 }
 
 
 .tabulka-2 table{
   border-collapse: collapse;
+  width: max-content;
 }
 .tabulka-2 table td{
   border-bottom: 1px solid #789FB0;;
   padding: 10px;
+  padding-left: 3vw;
+  padding-right:3vw;
 }
 
 .tabulka-3 table{
@@ -1141,6 +1192,15 @@ p {
   padding-bottom: 15px;
   padding-top:15px;
   display: none;
+}
+.odpoved {
+  display: none;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.odpoved.show {
+  display: block;
+  opacity: 1;
 }
 
 
@@ -1516,7 +1576,7 @@ background: #FFFFFF;
   padding: 75px;
   gap: 40px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg) no-repeat center / cover;
 }
 .section-cta-1 .text{
   padding: 0px 8vw;
@@ -1531,7 +1591,7 @@ background: #FFFFFF;
   padding: 75px;
   gap: 40px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg)no-repeat center / cover;
 }
 
 
@@ -1756,3 +1816,462 @@ background: #FFFFFF;
   gap: 25px;
   width: 30vw;
 }
+
+
+
+.section-mapa-mista{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 75px;
+  gap: 40px;
+  position: relative;
+  background: #F3F3F3;
+}
+.section-mapa-mista .content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.section-mapa-mista .content .leva{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  width: 18vw;
+}
+.section-mapa-mista .content .leva .poloha{
+  gap:4px; 
+  display: flex;
+  flex-direction: column;
+}
+.section-mapa-mista .content .leva .upozorneni{
+  width: 10vw;
+}
+.section-mapa-mista .content .prava{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0px;
+  gap: 20px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  width: 18vw;
+}
+.section-mapa-mista .content .prava .misto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.section-mapa-mista .mapa{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  flex: none;
+  align-self: stretch;
+}
+.section-mapa-mista .mapa img{
+  width: 43vw;
+}
+
+
+
+
+
+
+
+
+.section-kontakt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 75px;
+  gap: 40px;
+  background: #FFFFFF;
+}
+.section-kontakt .content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+}
+.section-kontakt .content .leva{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  flex: none;
+  order: 0;
+  width: 40vw;
+}
+.section-kontakt .content .leva .kontaky{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  flex: none;
+  flex-grow: 0;
+}
+
+
+.section-kontakt .content .prava{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 30vw;
+  background: #F3F3F3;
+}
+.section-kontakt .content .prava .makler{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.section-kontakt .other{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 75px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+
+
+
+.section-mapa{
+  height: 40vh;
+}
+
+
+
+
+
+.section-detail-apartmanu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px;
+  gap: 40px;
+  background: #FFFFFF;
+}
+.section-detail-apartmanu .content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 75px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.section-detail-apartmanu .content .leva{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  width: 20vw;
+}
+.section-detail-apartmanu .content .leva .info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.section-detail-apartmanu .content .pudoris{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-detail-apartmanu .content .pudoris img{
+  padding: 0px;
+  width: 20vw;
+  height: auto;
+}
+.section-detail-apartmanu .content .prava{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+  width: 20vw;
+}
+
+
+
+
+
+
+
+
+
+.section-hero-basic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 95vh;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/BD_Nadrazni_0000_v23.jpg) no-repeat center / cover;
+}
+.section-hero-basic .header{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  height: 33%;
+}
+.section-hero-basic .header .header-navbars{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 0px 40px 3vw;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  width: 38vw;
+}
+.section-hero-basic .header .header-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 20px 0px;
+  gap: 15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 11vw;
+}
+
+.section-hero-basic .header .header-logo .nazev {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.section-hero-basic .header .header-logo .nazev p:nth-child(1) {
+  font-weight: 800;
+}
+
+.section-hero-basic .header .header-logo .nazev p:nth-child(2) {
+  font-weight: 100;
+}
+.section-hero-basic .header .header-kontakt{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 3vw 40px 0px;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+  width: 38vw;
+}
+
+
+.section-hero-basic .hero{
+  display: flex;
+  height: 33%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-hero-basic .dole{
+  height: 33%;
+  display: flex;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 100%;
+}
+.section-hero-basic .dole .leva{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 19%;
+  gap:10px
+}
+.section-hero-basic .dole .prava{
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+  margin-right: 75px;
+  gap:15px
+}
+
+
+
+
+
+
+
+
+
+
+.section-hero-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 95vh;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/m4559-sek2np3Db.jpg) no-repeat center / cover;
+}
+.section-hero-button .header{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  height: 33%;
+}
+.section-hero-button .header .header-navbars{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 0px 40px 3vw;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  width: 38vw;
+}
+.section-hero-button .header .header-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 20px 0px;
+  gap: 15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 11vw;
+}
+
+.section-hero-button .header .header-logo .nazev {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.section-hero-button .header .header-logo .nazev p:nth-child(1) {
+  font-weight: 800;
+}
+
+.section-hero-button .header .header-logo .nazev p:nth-child(2) {
+  font-weight: 100;
+}
+.section-hero-button .header .header-kontakt{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 3vw 40px 0px;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+  width: 38vw;
+}
+
+
+.section-hero-button .hero{
+  display: flex;
+  height: 33%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.section-hero-button .dole{
+  height: 33%;
+  display: flex;
+  padding-bottom: 40px;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+}
+

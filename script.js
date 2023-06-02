@@ -16,12 +16,18 @@ function scrollPage() {
       } else {
       window.scrollBy(0, scrollStep);
       }
-  }, 20);
+  }, 10);
   }
   
   const elements = document.getElementsByClassName("scrollElement");
   Array.from(elements).forEach((element) => {
   element.addEventListener("click", scrollPage);
 });
+
+
+
+
+
+
 
 

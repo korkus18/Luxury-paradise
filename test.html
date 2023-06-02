@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/apartman-1.png");
+            background-size: cover;
+            transition: background-image 0.5s ease;
+        }
+        
+        #button-container {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 5px;
+            margin: 0 5px;
+            font-size: 16px;
+            background-color: transparent;
+            border: 2px solid #ccc;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transform: rotate(-45deg);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .button:before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #ccc;
+        }
+        
+        .button.active {
+            background-color: #ccc;
+            border-color: #789FB0;
+            margin: 6px; /* Odsazení mezi buttonem a borderem */
+        }
+        
+        .button.active:before {
+            border-color: #789FB0;
+        }
+        
+        #text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="text-container">
+        <p>Zde je váš text.</p>
+    </div>
+    <div id="button-container">
+        <button class="button active" onclick="changeBackground(0)"></button>
+        <button class="button" onclick="changeBackground(1)"></button>
+        <button class="button" onclick="changeBackground(2)"></button>
+    </div>
+    
+    <script>
+        var images = ["images/apartman-1.png", "images/apartman-2.png", "images/apartman-3.png"]; /* Replace with your image URLs */
+        var currentIndex = 0;
+        var backgroundElement = document.getElementById("background");
+        var buttons = document.getElementsByClassName("button");
+        
+        function changeBackground(index) {
+            currentIndex = index;
+            backgroundElement.style.backgroundImage = "url('" + images[index] + "')";
+            
+            for (var i = 0; i < buttons.length; i++) {
+                if (i === index) {
+                    buttons[i].classList.add("active");
+                } else {
+                    buttons[i].classList.remove("active");
+                }
+            }
+        }
+        
+        function rotateBackground() {
+            currentIndex = (currentIndex + 1) % images.length;
+            backgroundElement.style.backgroundImage = "url('" + images[currentIndex] + "')";
+            
+            for (var i = 0; i < buttons.length; i++) {
+                if (i === currentIndex) {
+                    buttons[i].classList.add("active");
+                } else {
+                    buttons[i].classList.remove("active");
+                }
+            }
+        }
+        
+        setInterval(rotateBackground, 5000);
+    </script>
+</body>
+</html>

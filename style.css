@@ -8,7 +8,12 @@ p {
 body{
   margin:0px;
 }
-
+a{
+  text-decoration: none;
+}
+a:hover{
+  scale: 1.1;
+}
 /* components */
 
 
@@ -388,7 +393,7 @@ body{
   left: 0;
   height: 13px;
   width: 13px;
-  background-color: #eee;
+  background-color: #ccc;
   border-radius: 2PX;
 }
 
@@ -421,7 +426,10 @@ body{
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.slider {
+
+
+.section-hero-basic .slider {
+  cursor: pointer;
   border: 2px solid transparent;
   padding: 2px;
   width: 19px;
@@ -437,16 +445,17 @@ body{
   -ms-flex-align: center;
   align-items: center;
 }
-.slider span{
+
+.section-hero-basic .slider span {
   background: #fff;
   width: 9px;
   height: 9px;
   display: block;
 }
-.aktivni{
+
+.section-hero-basic .aktivni{
   border-color: #789FB0;
 }
-
 
 
 
@@ -1582,7 +1591,7 @@ background: #FFFFFF;
   padding: 75px;
   gap: 40px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg) no-repeat center / cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/vizu_4.webp) no-repeat center / cover;
 }
 .section-cta-1 .text{
   padding: 0px 8vw;
@@ -1597,7 +1606,7 @@ background: #FFFFFF;
   padding: 75px;
   gap: 40px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/luxury-interier-2.jpeg)no-repeat center / cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/Space-81.jpg)no-repeat center / cover;
 }
 
 
@@ -2068,8 +2077,8 @@ background: #FFFFFF;
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  height: 95vh;
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/BD_Nadrazni_0000_v23.jpg) no-repeat center / cover;
+  height: 85vh;
+  animation: changeBackground 10s infinite;
 }
 .section-hero-basic .header{
   display: flex;
@@ -2175,109 +2184,29 @@ background: #FFFFFF;
   gap:15px
 }
 
-
-
-
-
-
-
-
-
-
-.section-hero-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  height: 95vh;
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/m4559-sek2np3Db.jpg) no-repeat center / cover;
-}
-.section-hero-button .header{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  height: 33%;
-}
-.section-hero-button .header .header-navbars{
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 40px 0px 40px 3vw;
-  gap: 2vw;
-  border-bottom: 1px solid #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  width: 38vw;
-}
-.section-hero-button .header .header-logo{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 40px 20px 0px;
-  gap: 15px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  width: 11vw;
-}
-
-.section-hero-button .header .header-logo .nazev {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  display: flex;
-  letter-spacing: 1px;
-  color: #fff;
-}
-.section-hero-button .header .header-logo .nazev p:nth-child(1) {
-  font-weight: 800;
-}
-
-.section-hero-button .header .header-logo .nazev p:nth-child(2) {
-  font-weight: 100;
-}
-.section-hero-button .header .header-kontakt{
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 40px 3vw 40px 0px;
-  gap: 2vw;
-  border-bottom: 1px solid #FFFFFF;
-  flex: none;
-  order: 2;
-  flex-grow: 1;
-  width: 38vw;
+@keyframes changeBackground {
+  0% {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/apartman-1.png) no-repeat center / cover;
+  }
+  50% {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/apartman-2.png) no-repeat center / cover;
+  }
+  100% {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/apartman-3.png) no-repeat center / cover;
+  }
 }
 
 
-.section-hero-button .hero{
-  display: flex;
-  height: 33%;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.section-hero-button .dole{
-  height: 33%;
-  display: flex;
-  padding-bottom: 40px;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: flex-end;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 

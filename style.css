@@ -2200,6 +2200,102 @@ background: #FFFFFF;
 
 
 
+.section-hero-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 85vh;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/m4559-sek2np3Db.jpg) no-repeat center / cover;
+}
+.section-hero-button .header{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  height: 33%;
+}
+.section-hero-button .header .header-navbars{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 0px 40px 3vw;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  width: 38vw;
+}
+.section-hero-button .header .header-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 20px 0px;
+  gap: 15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 11vw;
+}
+
+.section-hero-button .header .header-logo .nazev {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.section-hero-button .header .header-logo .nazev p:nth-child(1) {
+  font-weight: 800;
+}
+
+.section-hero-button .header .header-logo .nazev p:nth-child(2) {
+  font-weight: 100;
+}
+.section-hero-button .header .header-kontakt{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 3vw 40px 0px;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+  width: 38vw;
+}
+
+
+.section-hero-button .hero{
+  display: flex;
+  height: 33%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.section-hero-button .dole{
+  height: 33%;
+  display: flex;
+  padding-bottom: 40px;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+}
 
 
 
@@ -2208,5 +2304,159 @@ background: #FFFFFF;
 
 
 
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url("images/apartman-1.png") no-repeat center / cover;
+  background-size: cover;
+  transition: background-image 0.5s ease;
+}
 
+#button-container {
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  width: 95%;
+  align-items: center;
+  justify-content: flex-end
+}
 
+.button {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transform: rotate(-45deg);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button.active {
+  background-color: #fff;
+  border-color: #789FB0;
+  margin: 6px; /* Odsazení mezi buttonem a borderem */
+}
+
+.button.active:before {
+  border-color: #789FB0;
+}
+
+#text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 24px;
+}
+.header-klikaci{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  height: 33%;
+}
+.header-kontakt-klikaci{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 3vw 40px 0px;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+  width: 38vw;
+}
+.header-logo-klikaci{
+  display: flex;  
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 40px 20px 0px;
+  width: 11vw;
+}
+.header-logo-klikaci .logo{
+  display: flex;
+  justify-content: center;
+  color: #ffff;
+}
+.header-logo-klikaci .nazev-klikaci {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  letter-spacing: 1px;
+  color: #ffff;
+  justify-content: center;
+  padding-top:10px;
+}
+.header-logo-klikaci .nazev-klikaci p:nth-child(1) {
+  font-weight: 800;
+}
+.header-logo-klikaci .nazev-klikaci p:nth-child(2) {
+  font-weight: 100;
+}
+.header-navbars-klikaci{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 0px 40px 3vw;
+  gap: 2vw;
+  border-bottom: 1px solid #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  width: 38vw;
+}
+.hero-klikaci{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.leva-klikaci{
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap:5px;
+}

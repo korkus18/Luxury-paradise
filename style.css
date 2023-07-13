@@ -411,8 +411,8 @@ a:hover{
 }
 
 .cont-check .checkmark:after {
-  left: 4px;
-  top:1.5px;
+  left: 6px;
+  top: 2.5px;
   width: 3px;
   height: 7px;
   border: solid white;
